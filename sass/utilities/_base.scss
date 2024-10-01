@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: red;
+
+nav{
+  display: flex;
+}
+ul{
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
 }
