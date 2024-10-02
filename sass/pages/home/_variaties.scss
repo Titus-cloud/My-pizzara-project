@@ -1,0 +1,52 @@
+@use "../../utilities/variables" as *;
+
+.variaties{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      // height: inherit;
+      gap: 30px;
+      align-items: flex-end;
+      margin: 30px;
+
+      
+      div{
+        text-align: center;
+        background-color: $ba-nav;
+        height: 200px;
+        width: 200px;
+        align-content: center;
+        
+        img{
+          margin-top: -70px;
+          width: 130px;
+        }
+
+        p {
+          font-size: small;
+          font-weight: bold;
+        }
+        span{
+          font-size: small;
+          font-weight: normal;
+          color: $light-gray;
+          line-height: 2;
+          padding-top: -30px;
+        }
+        // .var{
+        //   width: 188px;
+        // }
+          button{
+          background-color: $black;
+          color: #fff;
+          width: 8rem;
+          height: 2em;
+          font-weight: bold;
+          margin-top: 55px;
+        }
+      }
+    }
+    .var-btn{
+      background-color: yellow;
+      align-items: center;
+    }
