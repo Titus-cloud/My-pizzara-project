@@ -12,45 +12,58 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
       <!-- This is the nav part -->
       <header>
         <nav>
-          <img src="images/logo.svg" alt="this is the main logo" width="90px"/>
+          <div class="container">
+            <div class="nav">
+              <div class="nav-left">
+                <img
+                  src="images/logo.svg"
+                  alt="this is the main logo"
+                  width="90px"
+                />
+              </div>
 
-          <div class="nav-left">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#menu">About Us</a></li>
-              <li><a href="#contact">Shop</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+              <div class="nav-center">
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#menu">About Us</a></li>
+                  <li><a href="#contact">Shop</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
 
-          <div class="nav-center">
-            <img
-              src="images/shopping-cart.png"
-              alt="this is the shopping cart"
-              width="15px"
-            />
-          </div>
+              <div class="nav-right">
+                <img
+                  src="images/shopping-cart.png"
+                  alt="this is the shopping cart"
+                  
+                />
 
-          <div class="nav-right">
-            <img
-              src="images/avatar.png"
-              alt="this is the avater"
-              width="15px"
-            />
+                <img
+                  src="images/avatar.png"
+                  alt="this is the avater"
+                  
+                />
+              </div>
+              <i class="fa-solid fa-bars"></i>
+            </div>
           </div>
         </nav>
       </header>
 
       <!-- This is the first part -->
-      <section class="section-one">
+      <section class="hero">
+        <div class="left">
         <span>Easy way to order your food</span>
-        <h1>Choosing Healthy & Fresh Pizza</h1>
+        <h1>Choosing <span>Healthy</span>&<span>Fresh</span>   Pizza</h1>
 
         <p>
           We offer the fastest and favorite pizza delivery services all over the
@@ -66,38 +79,54 @@
                 class="search-input"
               />
               <button type="submit" class="search-btn">Search</button>
+              
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </div>
           </form>
         </div>
-
+      
         <!-- This is the area with varieties -->
-        <div>
+        <div class="cuts">
           <div>
             <img
               src="./images/cutlery.png"
               alt="This is the cutlery"
-              style="background-color: black; width: 100px"
+              
             />
-            <p>500+<br />Restaurants</p>
+            <h6>500+<br />Restaurants</h6>
           </div>
 
           <div>
             <img
               src="./images/varieties.png"
               alt="variaties"
-              style="background-color: black; width: 100px"
+              
             />
-            <p>200+<br />Pizza Varieties</p>
+            <h6>200+<br />Pizza Varieties</h6>
           </div>
 
           <div>
             <img
               src="./images/star.png"
               alt="star"
-              style="background-color: black; width: 100px"
+              
             />
-            <p>(7.8)<br />10K Reviews</p>
+            <h6>(7.8)<br />10K Reviews</h6>
           </div>
+        </div>
+      </div>
+
+        <div class="right">
+          <div class="piz1">
+            <img src="images/hero-pizza.png" alt="hero pizza">
+          </div>
+
+        <div class="pizzas">
+          <img src="images/pizza-1.png" alt="pizza1">
+          <img src="images/pizza-2.png" alt="pizza2">
+          <img src="images/pizza-3.png" alt="pizza3">
+          <img src="images/pizza-4.png" alt="pizza4">
+        </div>
         </div>
         <!-- HERE THERE SHOULD BE A BACKGROUND PHOTO TO BE ON THE LEFT -->
       </section>

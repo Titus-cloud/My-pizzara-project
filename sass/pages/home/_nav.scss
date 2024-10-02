@@ -1,3 +1,56 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
 nav{
-  display: flex;
+background-color: $ba-nav;
+
+.nav{
+  @include flex(space-between,center, row);
+  .nav-right{
+    img{
+    padding-left: 15px;    
+    width: 30px;
+    }
+  }
+  
+
+  .nav-center{
+
+    ul{
+
+      @include flex(flex,center,center);
+
+    }
+    a{
+      padding: 25px;
+    }
+    a{
+      display: inline-block;
+      &:hover{
+        color: white;
+        background-color: $primary-color;
+      }
+    }
+  }
 }
+}
+
+.nav-center{
+  display: inline-block;
+
+    @include flex(flex,center,center);
+    
+   
+  }
+
+  // media queries
+  @media screen and (max-width: 600px){
+    .nav-center{
+      display: none;
+      a{
+        margin-bottom: 10px;
+      }.fa-bars{
+        display: inline-block;
+      }
+    }
+  }
+
