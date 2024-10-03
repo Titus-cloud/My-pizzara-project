@@ -23,6 +23,50 @@ a {
   margin: 0 auto;
 }
 
+@media (min-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .nav, .hero, .menu, .footer .variaties .why-us-section .support-section {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-left, .nav-center, .nav-right {
+    flex: 1;
+    display: grid;
+    justify-content: space-between;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+/* Desktop styles */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .container {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .nav, .hero, .menu, .footer {
+    flex-direction: row;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 nav {
   background-color: #F4F7FB;
 }
@@ -34,9 +78,15 @@ nav .nav {
   flex-wrap: nowrap;
   flex-direction: row;
 }
+nav .nav .nav-right {
+  display: flex;
+  align-content: center;
+}
 nav .nav .nav-right img {
-  padding-left: 15px;
-  width: 50px;
+  width: 40px;
+}
+nav .nav .nav-right img:nth-child(2) {
+  margin-right: 28em;
 }
 nav .nav .nav-center ul {
   display: flex;
@@ -45,6 +95,7 @@ nav .nav .nav-center ul {
   flex-direction: center;
   flex-wrap: nowrap;
   flex-direction: center;
+  text-align: center;
 }
 nav .nav .nav-center a {
   padding: 25px;
@@ -55,6 +106,7 @@ nav .nav .nav-center a {
 nav .nav .nav-center a:hover {
   color: white;
   background-color: orange;
+  height: 40%;
 }
 
 .nav-center {
@@ -269,9 +321,8 @@ nav .nav .nav-center a:hover {
 .variaties {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 30px;
+  gap: 15em;
   align-items: center;
-  margin: 60px;
 }
 .variaties .varieties-container {
   display: flex;
@@ -314,9 +365,16 @@ nav .nav .nav-center a:hover {
   padding: 1em 4em;
   color: #fff;
 }
-.variaties .var-btn {
-  background-color: yellow;
-  align-items: center;
+
+.var-btn {
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .why-us-section {

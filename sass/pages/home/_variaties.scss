@@ -4,9 +4,10 @@
 .variaties{
   display: flex;
   justify-content: space-evenly;
-  margin-top: 30px;
+
+  gap: 15em;
   align-items: center;
-  margin: 60px;
+
   .varieties-container{
     @include flex(center, center, column );
 
@@ -21,13 +22,14 @@
   .variaties-img{
     width: 130px;
     height: 130px;
-    
+
     img{
       width: 100%;
     }
       }
         .varieties-content{
           background-color: $ba-nav;
+          // gap: 50px;
           padding: 5em 2em 4em 2em;
           margin-top: -4em;
           z-index: -1;
@@ -46,9 +48,15 @@
             color: #fff;
           }
         }
-        .var-btn{
-          background-color: yellow;
-          align-items: center;
       
-    }
-    }
+}
+      .var-btn {
+  margin: 20px auto;     
+  text-align: center; 
+  padding: 10px 20px; 
+  background-color: #ff6600;  
+  color: white;          
+  border: none;          
+  border-radius: 5px;  
+  cursor: pointer;      
+}
