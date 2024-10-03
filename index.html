@@ -119,9 +119,9 @@
       <section class="menu">
         <div class="container">
           <div class="menu-container">
-            <span class="span">New in Menu</span>
+            <span class="yellow">New in Menu</span>
             <div>
-              <h1><span>Special Menu</span> For You</h1>
+              <h1><span class="yellow">Special Menu</span> For You</h1>
             </div>
             <ul>
               <li><a href="#" class="active">Chicken Pizza</a></li>
@@ -132,62 +132,88 @@
             </ul>
             <hr />
           </div>
-        </div>
 
         <!-- Pizza Items -->
-        <section>
+        
           <div class="variaties">
-            <div>
+            <div class="varieties-container">
               <div class="variaties-img">
                 <img
                   src="images/barbecue-chicken-pizza.png"
                   alt="BBQ Chicken Pizza"
                 />
               </div>
-              <p>
+            <div class="varieties-content">
+              <p class="v-c-bold">
                 BBQ Chicken Pizza <br />
-                <span>(Cheese with Shrimp)</span> <br />
-                Ksh. 1500
               </p>
-              <button type="button">Add to Cart</button>
+                <span>(Cheese with Shrimp)</span> <br />
+                <p class="v-c-bold">Ksh. 1500</p>
             </div>
-            <div>
-              <div class="variaties-img">
-                <img
+            <div class="varieties-btn">
+              <button class="v-c-bold" type="button">Add to Cart</button>
+            </div>
+            </div>
+
+
+
+            <div class="variaties">
+              <div class="varieties-container">
+                <div class="variaties-img">
+                  <img
                   src="images/tandoori-chicken.png"
                   alt="Tandoori Chicken Pizza"
                 />
+                </div>
+              <div class="varieties-content">
+                <p class="v-c-bold">
+                  Tandoori Chicken Pizza<br />
+                </p>
+                  <span>(Cheese with Shrimp)</span> <br />
+                  <p class="v-c-bold"> Ksh. 1500 </p>
+                  
               </div>
-              <p>
-                Tandoori Chicken Pizza <br />
-                <span>(Cheese with Shrimp)</span> <br />
-                Ksh. 1500
-              </p>
-              <button type="button">Add to Cart</button>
-            </div>
-            <div class="var1">
-              <div class="variaties-img">
-                <img
-                  class="var"
-                  src="images/chicken-kebab.png"
-                  alt="Chicken Kebab Pizza"
-                />
+              <div class="varieties-btn">
+                <button class="v-c-bold" type="button">Add to Cart</button>
               </div>
-              <p>
-                Chicken Kebab Pizza<br />
-                <span>(Cheese with Shrimp)</span> <br />
-                Ksh. 1500
-              </p>
-              <button type="button">Add to Cart</button>
-            </div>
-          </div>
-          <div class="var-btn">
-            <button class="view" type="button">View More</button>
-          </div>
-        </section>
+              </div>
+
+
+              <div class="variaties">
+                <div class="varieties-container">
+                  <div class="variaties-img">
+                    <img
+                    class="var"
+                    src="images/chicken-kebab.png"
+                    alt="Chicken Kebab Pizza"
+                  />
+                  </div>
+                <div class="varieties-content">
+                  <p class="v-c-bold">
+                    Chicken Kebab Pizza<br />
+                  </p>
+                    <span>(Cheese with Shrimp)</span> <br />
+                   <p class="v-c-bold"> Ksh. 1500 </p>
+                </div>
+                
+                <div class="varieties-btn">
+                  <button class="v-c-bold" type="button">Add to Cart</button>
+                </div>
+                </div>
+
+
+                <div>
+                <button class="var-btn">View More</button>
+                </div>
+           
+           
+          
+        <!-- </section> -->
+        </main>
 
         <!-- Why Us Section -->
         <section class="why-us-section">
+          <div class="container">
           <div class="why-us-container">
             <!-- Image Section -->
             <div class="why-us-image">
@@ -196,44 +222,68 @@
 
             <!-- Content Section -->
             <div class="why-us-content">
+
+              <div class="why-us-top">
               <span class="highlight">Why Us</span>
               <h2>Why We Are <span class="highlight-best">The Best</span></h2>
               <p>
                 We always try to maintain our food quality for our customers.
                 Our customers’ satisfaction is our top priority.
               </p>
+            </div>
+
               <div class="features">
                 <div class="feature">
-                  <img src="images/fresh-pizza.png" alt="Fresh Pizza" />
+                  <div class="feature-img">
+                    <img src="images/fresh-pizza.png" alt="Fresh Pizza" />
+                  </div>
+
+                  <div>
                   <h4>Fresh Pizza</h4>
                   <p>
                     We make our pizza to suit your needs as we use the best
                     quality ingredients.
                   </p>
                 </div>
+
+                </div>
                 <div class="feature">
+
+                  <div class="feature-img">
                   <img src="images/fast-delivery.png" alt="Fast Delivery" />
+                  </div>
+
+                  <div>
                   <h4>Fast Delivery</h4>
                   <p>
                     Through rapid delivery, we provide a high level of customer
                     service.
                   </p>
                 </div>
+                </div>
+
                 <div class="feature">
+
+                  <div class="feature-img">
                   <img src="images/quality.png" alt="Best Quality" />
+                  </div>
+                  <div>
                   <h4>Best Quality</h4>
                   <p>
                     Our delivery service is available at any time and usually
                     every day.
                   </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </section>
 
         <!-- Support Section -->
         <section class="support-section">
+          <div class="container">
           <div class="support-container">
             <!-- Heading Section -->
             <span class="help-text">Need Any Help?</span>
@@ -258,7 +308,9 @@
               </div>
             </div>
           </div>
+        </div>
         </section>
+      </main>
 
         <!-- Footer Section -->
         <footer>
@@ -306,7 +358,5 @@
             </div>
           </div>
         </footer>
-      </section>
-    </main>
   </body>
 </html>

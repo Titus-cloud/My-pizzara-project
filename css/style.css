@@ -226,27 +226,22 @@ nav .nav .nav-center a:hover {
   width: 15%;
 }
 
-.container {
+.menu {
   margin: 50px 0;
   padding: 0 20px;
   text-align: center;
 }
-.container .span {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-.container span {
+.menu .yellow {
   color: orange;
-  font-size: 2rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
-.container h1 {
+.menu h1 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
-.container ul {
+.menu ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -255,62 +250,71 @@ nav .nav .nav-center a:hover {
   flex-direction: row;
   margin-top: 20px;
 }
-.container ul li {
+.menu ul li {
   font-size: 1.2rem;
   font-weight: bold;
 }
-.container ul li a {
+.menu ul li a {
   transition: color 0.3s ease;
 }
-.container ul li a:hover {
+.menu ul li a:hover {
   color: orange;
   border-bottom: 5px solid orange;
   padding: 16px 0;
 }
-.container hr {
+.menu hr {
   margin-top: 20px;
 }
 
 .variaties {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 30px;
-  gap: 30px;
-  align-items: flex-end;
-  margin: 30px;
+  align-items: center;
+  margin: 60px;
 }
-.variaties div {
-  text-align: center;
-  background-color: #F4F7FB;
-  height: 200px;
-  width: 200px;
-  align-content: center;
+.variaties .varieties-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
-.variaties div img {
-  margin-top: -70px;
+.variaties .varieties-container .var {
+  width: 195px;
+  align-items: center;
+}
+.variaties .varieties-container .v-c-bold {
+  font-weight: bold;
+}
+.variaties .variaties-img {
   width: 130px;
+  height: 130px;
 }
-.variaties div p {
-  font-size: small;
-  font-weight: bold;
+.variaties .variaties-img img {
+  width: 100%;
 }
-.variaties div span {
-  font-size: small;
-  font-weight: normal;
+.variaties .varieties-content {
+  background-color: #F4F7FB;
+  padding: 5em 2em 4em 2em;
+  margin-top: -4em;
+  z-index: -1;
+}
+.variaties .varieties-content span {
   color: #ccc;
-  line-height: 2;
-  padding-top: -30px;
 }
-.variaties div button {
+.variaties .varieties-btn {
+  width: 100%;
+  margin-top: -1.5em;
+}
+.variaties .varieties-btn button {
   background-color: #000;
+  border: none;
+  padding: 1em 4em;
   color: #fff;
-  width: 8rem;
-  height: 2em;
-  font-weight: bold;
-  margin-top: 55px;
 }
-
-.var-btn {
+.variaties .var-btn {
   background-color: yellow;
   align-items: center;
 }
@@ -325,25 +329,31 @@ nav .nav .nav-center a:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   flex-direction: row;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
 }
 .why-us-section .why-us-image {
   flex: 1;
 }
 .why-us-section .why-us-image img {
   max-width: 100%;
-  border-radius: 10px;
 }
 .why-us-section .why-us-content {
   flex: 1;
-  padding: 20px;
+  justify-content: center;
+  padding-right: 10px;
+}
+.why-us-section .why-us-content .why-us-top {
   display: flex;
-  gap: 3px;
+  align-items: flex-start;
+  margin: 3em 15px 0 2.5em;
+  flex-direction: column;
+}
+.why-us-section .why-us-content .why-us-top .feature-text {
+  font-size: 1em;
 }
 .why-us-section .why-us-content .highlight {
-  color: orange;
+  color: #000;
   font-weight: bold;
   display: block;
   font-size: 1.2rem;
@@ -359,34 +369,40 @@ nav .nav .nav-center a:hover {
 }
 .why-us-section .why-us-content p {
   font-size: 1em;
-  color: orange;
+  color: #000;
   margin-bottom: 30px;
   line-height: 1.6;
 }
 .why-us-section .why-us-content .features {
-  display: flex;
-  justify-content: space-between;
+  background-color: #F4F7FB;
 }
 .why-us-section .why-us-content .features .feature {
-  flex-basis: 30%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 3em 15px 0 2.5em;
+  text-align: left;
+  background-color: #fff;
+}
+.why-us-section .why-us-content .features .feature .feature-img {
+  width: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  height: 70px;
+  align-content: center;
+  padding-left: 15px;
 }
 .why-us-section .why-us-content .features .feature img {
-  width: 100px;
-  height: 100px;
-  background-color: #000;
-  padding: 10px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  width: 70%;
 }
 .why-us-section .why-us-content .features .feature h4 {
   font-size: 1.3rem;
-  color: orange;
-  margin-bottom: 10px;
+  color: #000;
+  margin-left: 25px;
 }
 .why-us-section .why-us-content .features .feature p {
   font-size: 1em;
   color: #ccc;
+  margin-left: 25px;
   line-height: 1.5;
 }
 
