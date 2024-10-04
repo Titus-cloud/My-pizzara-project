@@ -5,11 +5,12 @@
   display: flex;
   justify-content: space-evenly;
 
-  gap: 15em;
+  // gap: 15em;
   align-items: center;
 
   .varieties-container{
     @include flex(center, center, column );
+    // background-color: red;
 
     .var{
       width: 195px;
@@ -36,6 +37,8 @@
 
           span{
             color: $light-gray;
+            display: inline-block;
+            margin: .8em 0;
           }
         }
         .varieties-btn{
@@ -44,7 +47,7 @@
           button{
             background-color: $black;
             border: none;
-            padding: 1em 4em;
+            padding: 1em 3em;
             color: #fff;
           }
         }

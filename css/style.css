@@ -340,7 +340,6 @@ nav .nav .nav-center a:hover {
 .variaties {
   display: flex;
   justify-content: space-evenly;
-  gap: 15em;
   align-items: center;
 }
 .variaties .varieties-container {
@@ -373,6 +372,8 @@ nav .nav .nav-center a:hover {
 }
 .variaties .varieties-content span {
   color: #ccc;
+  display: inline-block;
+  margin: 0.8em 0;
 }
 .variaties .varieties-btn {
   width: 100%;
@@ -381,7 +382,7 @@ nav .nav .nav-center a:hover {
 .variaties .varieties-btn button {
   background-color: #000;
   border: none;
-  padding: 1em 4em;
+  padding: 1em 3em;
   color: #fff;
 }
 
@@ -666,13 +667,18 @@ footer .newsletter .mail-box .subscribe-btn:hover {
     width: 100%;
   }
 }
-.shop-container {
-  max-width: 80%;
-  margin: 10px auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+.all-varieties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.variaties {
+  gap: 2em;
 }
 
 @media only screen and (max-width: 600px) {

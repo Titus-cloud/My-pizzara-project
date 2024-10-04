@@ -1,6 +1,12 @@
 @use '../../utilities/mixins' as *;
 
 
-.shop-container {
-@include grid(grid);
+.all-varieties{
+  @include flex(center, center, column);
+  gap:3em;
 }
+.variaties{
+  gap: 2em;
+  // background-color: red;
+}
+
