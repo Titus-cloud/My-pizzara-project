@@ -1,6 +1,6 @@
-// @use '../../utilities/mixins' as *;
+@use '../../utilities/mixins' as *;
 
 
-// .shop-container {
-// @include grid(grid);
-// }
+.shop-container {
+@include grid(grid);
+}
