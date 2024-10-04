@@ -30,7 +30,7 @@ a{
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
   .container {
     width: 100%;
     padding: 20px;
@@ -43,10 +43,13 @@ a{
     justify-content: space-between;
   }
 
-  .nav-left, .nav-center, .nav-right {
+  .nav-left, .nav-center {
     flex: 1;
     display: grid;
     justify-content: space-between;
+  }
+  .nav-right{
+    visibility: hidden;
   }
 
   .menu {

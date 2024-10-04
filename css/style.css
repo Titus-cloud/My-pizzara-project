@@ -78,23 +78,9 @@ nav .nav {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-nav .nav .nav-left img {
-  width: 200px;
-}
-nav .nav .nav-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
 nav .nav .nav-right img {
-  margin-left: 40px;
-  width: 40px;
-}
-nav .nav .nav-right img:nth-child(2) {
-  margin-right: 28em;
+  padding-left: 15px;
+  width: 50px;
 }
 nav .nav .nav-center ul {
   display: flex;
@@ -103,8 +89,6 @@ nav .nav .nav-center ul {
   flex-direction: center;
   flex-wrap: nowrap;
   flex-direction: center;
-  text-align: center;
-  font-weight: bold;
 }
 nav .nav .nav-center a {
   padding: 25px;
@@ -115,7 +99,6 @@ nav .nav .nav-center a {
 nav .nav .nav-center a:hover {
   color: white;
   background-color: orange;
-  height: 40%;
 }
 
 .nav-center {
