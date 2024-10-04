@@ -7,3 +7,11 @@
   flex-direction: $direction;
 }
 
+@mixin grid($display){
+  max-width: 80%;
+  margin:10px auto;
+  padding: 20px;
+  display: $display;
+  grid-template-columns: repeat(4, 1fr);
+  gap:30px;
+}

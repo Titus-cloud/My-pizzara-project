@@ -78,11 +78,19 @@ nav .nav {
   flex-wrap: nowrap;
   flex-direction: row;
 }
+nav .nav .nav-left img {
+  width: 200px;
+}
 nav .nav .nav-right {
   display: flex;
-  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 nav .nav .nav-right img {
+  margin-left: 40px;
   width: 40px;
 }
 nav .nav .nav-right img:nth-child(2) {
@@ -96,6 +104,7 @@ nav .nav .nav-center ul {
   flex-wrap: nowrap;
   flex-direction: center;
   text-align: center;
+  font-weight: bold;
 }
 nav .nav .nav-center a {
   padding: 25px;
@@ -579,6 +588,105 @@ footer .newsletter .mail-box .input {
   width: 250px;
   font-size: 500;
   height: 60px;
+}
+footer .newsletter .mail-box .subscribe-btn {
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-size: 500;
+  cursor: pointer;
+}
+footer .newsletter .mail-box .subscribe-btn:hover {
+  background-color: #cc8400;
+}
+
+.shop-container {
+  max-width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+footer {
+  background-color: #000;
+  color: #ccc;
+  align-items: flex-start;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 20px;
+  -moz-column-gap: 10em;
+       column-gap: 10em;
+}
+footer .footer-left .footer-logo {
+  max-width: 300px;
+  margin-bottom: 20px;
+  flex: 1;
+}
+footer .footer-left h4 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+footer .footer-left .social-icons {
+  display: flex;
+}
+footer .footer-left .social-icons img {
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+footer .footer-left .social-icons img:hover {
+  background-color: #cc8400;
+}
+footer .quick-links {
+  flex: 1;
+}
+footer .quick-links h4 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+footer .quick-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .quick-links ul li {
+  margin-bottom: 10px;
+}
+footer .quick-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+footer .quick-links ul li a:hover {
+  color: orange;
+}
+footer .newsletter h4 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+footer .newsletter .mail-box {
+  display: flex;
+}
+footer .newsletter .mail-box .input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 350px;
+  font-size: 700;
+  height: 80px;
 }
 footer .newsletter .mail-box .subscribe-btn {
   padding: 10px 20px;

@@ -1,0 +1,6 @@
+@use '../../utilities/mixins' as *;
+
+
+.shop-container {
+@include grid(grid);
+}

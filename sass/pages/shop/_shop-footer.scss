@@ -1,0 +1,111 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+// Footer Section Styling
+footer {
+  background-color: $black;
+  // padding: 40px 0;
+  color: $light-gray;
+  // max-width: 80%;
+  align-items: flex-start;
+  
+  .footer-container {
+    @include flex(space-evenly, center);
+    margin: 0 auto;
+    padding: 20px;
+    column-gap: 10em;
+  }
+
+  .footer-left {
+    .footer-logo {
+      max-width: 300px;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    h4 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      // gap: 10px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        background-color: $black;
+        padding: 10px;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+
+  .quick-links {
+    flex: 1;
+    h4 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1em;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    h4 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .mail-box {
+      display: flex;
+
+      .input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        width: 350px;
+        font-size: 700;
+        height: 80px;
+      }
+
+      .subscribe-btn {
+        padding: 10px 20px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        color: #fff;
+        font-size: 500;
+        cursor: pointer;
+
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
