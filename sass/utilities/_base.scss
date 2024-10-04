@@ -30,58 +30,28 @@ a{
 }
 
 
-@media (min-width: 400px) {
-  .container {
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .nav, .hero, .menu, .footer .variaties .why-us-section .support-section{
-    flex-direction: column; 
-    justify-content: space-between;
-  }
-
-  .nav-left, .nav-center {
-    flex: 1;
-    display: grid;
-    justify-content: space-between;
-  }
-  .nav-right{
-    visibility: hidden;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-
-  .footer{
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
-/* Desktop styles */
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   body {
-    font-size: 18px;
-    line-height: 1.8;
+    overflow-x: hidden; 
   }
 
-  .container {
-    width: 100%;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+  header {
+    nav {
+      .nav {
+        flex-direction: column; 
+        width: 100%;
 
-  .nav, .hero, .menu, .footer {
-    flex-direction: row;
-  }
+        .nav-left, .nav-center, .nav-right {
+          text-align: center; 
+          margin: 10px 0; 
+          width: 100%; 
+        }
 
-  .footer{
-    flex-direction: column;
-    justify-content: space-between;
+        i.fa-bars {
+          display: block; 
+          margin: 10px 0;
+        }
+      }
+    }
   }
 }

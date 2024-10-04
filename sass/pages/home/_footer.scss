@@ -105,3 +105,19 @@ footer {
     }
   }
 }
+
+// Footer Section Media Query
+@media (max-width: 768px) {
+  footer {
+    .footer-container {
+      flex-direction: column; 
+      width: 100%; 
+
+      .footer-left, .quick-links, .newsletter {
+        text-align: center; 
+        margin: 10px 0; 
+        width: 100%; 
+      }
+    }
+  }
+}

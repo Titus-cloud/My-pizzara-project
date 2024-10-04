@@ -49,14 +49,14 @@
           }
         }
       
-}
+  }
       .var-btn {
-  margin: 20px auto;     
-  text-align: center; 
-  padding: 10px 20px; 
-  background-color: #ff6600;  
-  color: white;          
-  border: none;          
-  border-radius: 5px;  
-  cursor: pointer;      
-}
+      margin: 20px auto;     
+      text-align: center; 
+      padding: 10px 20px; 
+      background-color: $primary-color;  
+      color: #fff;          
+      border: none;          
+      border-radius: 5px;  
+      cursor: pointer;      
+  }

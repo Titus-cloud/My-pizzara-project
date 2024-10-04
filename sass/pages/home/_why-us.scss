@@ -117,6 +117,44 @@
   }
 }
 
+// Why Us Section Media Query
+@media (max-width: 768px) {
+  .why-us-section {
+    .why-us-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%; 
 
+      .why-us-image {
+        display: none; 
+      }
 
+      .why-us-content {
+        text-align: center;
 
+        .why-us-top {
+          h2 {
+            font-size: 1.5em; 
+          }
+        }
+
+        .features {
+          display: grid;
+          grid-template-columns: 1fr; 
+          gap: 10px;
+
+          .feature {
+            text-align: center;
+
+            .feature-img {
+              img {
+                max-width: 80%; 
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

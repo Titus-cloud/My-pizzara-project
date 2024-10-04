@@ -23,48 +23,22 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 600px) {
-  .container {
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .nav, .hero, .menu, .footer .variaties .why-us-section .support-section {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .nav-left, .nav-center, .nav-right {
-    flex: 1;
-    display: grid;
-    justify-content: space-between;
-  }
-  .menu {
-    flex-direction: column;
-  }
-  .footer {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-/* Desktop styles */
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   body {
-    font-size: 18px;
-    line-height: 1.8;
+    overflow-x: hidden;
   }
-  .container {
-    width: 100%;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .nav, .hero, .menu, .footer {
-    flex-direction: row;
-  }
-  .footer {
+  header nav .nav {
     flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
+  }
+  header nav .nav .nav-left, header nav .nav .nav-center, header nav .nav .nav-right {
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+  }
+  header nav .nav i.fa-bars {
+    display: block;
+    margin: 10px 0;
   }
 }
 nav {
@@ -270,6 +244,32 @@ nav .nav .nav-center a:hover {
   width: 15%;
 }
 
+@media (max-width: 768px) {
+  .hero .hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero .hero-container .left {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  .hero .hero-container .left h1 {
+    font-size: 1.5em;
+  }
+  .hero .hero-container .left .cuts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-container .left .cuts .cutt {
+    margin: 10px 0;
+  }
+  .hero .hero-container .right {
+    display: none;
+  }
+}
 .menu {
   margin: 50px 0;
   padding: 0 20px;
@@ -310,6 +310,33 @@ nav .nav .nav-center a:hover {
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .menu .menu-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  .menu .menu-container h1 {
+    font-size: 1.5em;
+  }
+  .menu .menu-container ul li {
+    margin: 5px 0;
+  }
+  .menu .variaties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .menu .variaties .varieties-container {
+    width: 100%;
+    text-align: center;
+  }
+  .menu .variaties .varieties-container img {
+    max-width: 80%;
+    height: auto;
+  }
+}
 .variaties {
   display: flex;
   justify-content: space-evenly;
@@ -362,8 +389,8 @@ nav .nav .nav-center a:hover {
   margin: 20px auto;
   text-align: center;
   padding: 10px 20px;
-  background-color: #ff6600;
-  color: white;
+  background-color: orange;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -456,6 +483,34 @@ nav .nav .nav-center a:hover {
   line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+  .why-us-section .why-us-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .why-us-section .why-us-container .why-us-image {
+    display: none;
+  }
+  .why-us-section .why-us-container .why-us-content {
+    text-align: center;
+  }
+  .why-us-section .why-us-container .why-us-content .why-us-top h2 {
+    font-size: 1.5em;
+  }
+  .why-us-section .why-us-container .why-us-content .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .why-us-section .why-us-container .why-us-content .features .feature {
+    text-align: center;
+  }
+  .why-us-section .why-us-container .why-us-content .features .feature .feature-img img {
+    max-width: 80%;
+    height: auto;
+  }
+}
 .support-section {
   background-color: white;
   padding: 60px 0;
@@ -503,6 +558,21 @@ nav .nav .nav-center a:hover {
   color: #ccc;
 }
 
+@media (max-width: 768px) {
+  .support-section .support-container {
+    text-align: center;
+    width: 100%;
+  }
+  .support-section .support-container .support-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .support-section .support-container .support-details .support-card {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
 footer {
   background-color: #000;
   padding: 40px 0;
@@ -585,6 +655,17 @@ footer .newsletter .mail-box .subscribe-btn:hover {
   background-color: #cc8400;
 }
 
+@media (max-width: 768px) {
+  footer .footer-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  footer .footer-container .footer-left, footer .footer-container .quick-links, footer .footer-container .newsletter {
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+  }
+}
 .shop-container {
   max-width: 80%;
   margin: 10px auto;

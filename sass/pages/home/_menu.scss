@@ -55,3 +55,42 @@
     
   }
 }
+
+
+// Menu Section Media Query
+@media (max-width: 768px) {
+  .menu {
+    .menu-container {
+      text-align: center; 
+      padding: 20px;
+      width: 100%; 
+
+      h1 {
+        font-size: 1.5em; 
+      }
+
+      ul {
+        li {
+          margin: 5px 0; 
+        }
+      }
+    }
+
+    .variaties {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      width: 100%; 
+
+      .varieties-container {
+        width: 100%; 
+        text-align: center;
+
+        img {
+          max-width: 80%; 
+          height: auto;
+        }
+      }
+    }
+  }
+}

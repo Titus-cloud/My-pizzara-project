@@ -146,4 +146,38 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    .hero-container {
+      display: flex;
+      flex-direction: column; 
+      width: 100%; 
+
+      .left {
+        text-align: center;
+        padding: 20px;
+        width: 100%; 
+
+        h1 {
+          font-size: 1.5em; 
+        }
+
+        .cuts {
+          display: flex;
+          flex-direction: column; 
+          align-items: center;
+
+          .cutt {
+            margin: 10px 0; 
+          }
+        }
+      }
+
+      .right {
+        display: none; 
+      }
+    }
+  }
+}
+
 
