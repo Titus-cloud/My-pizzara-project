@@ -34,6 +34,7 @@
   .search-box {
     display: flex;
     justify-content: start;
+    
     margin-top: 20px;
     position: relative; 
     align-items: center;
@@ -41,10 +42,7 @@
     
     .search-input {
       width: 80%;
-      height: 60px;
-      padding: 10px 10px 10px 40px;
-      font-size: 16px;
-      // box-shadow: 1px 1px 1px 1px $light-gray;
+      outline: none;
       border: none;
     }
 
@@ -67,14 +65,16 @@
       // styling the search icon
       }
       .search-icon {
-        position: absolute;
-        left: 20px; 
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 18px;
-        color: $black;
-        pointer-events: none;
+        margin: 0 1em;
       }
+      //   position: absolute;
+      //   left: 20px; 
+      //   top: 50%;
+      //   transform: translateY(-50%);
+      //   font-size: 18px;
+      //   color: $black;
+      //   pointer-events: none;
+      // }
     }
     .cuts{
       display: flex;

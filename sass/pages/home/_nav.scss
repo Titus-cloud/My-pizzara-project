@@ -1,56 +1,65 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
-nav{
-background-color: $ba-nav;
+nav {
+  background-color: $ba-nav;
 
-.nav{
-  @include flex(space-between,center, row);
-  .nav-right{
-    img{
-    padding-left: 15px;    
-    width: 50px;
+  .nav {
+    @include flex(space-between, center, row);
+    padding: 1em 0;
+
+    .nav-right {
+      @include flex(space-between, center, row);
+      gap: 2em;
+      img {
+        // padding-left: 15px;
+        width: 30px;
+      }
     }
-  }
-  
 
-  .nav-center{
-
-    ul{
-      // padding: 40px;
-      @include flex(flex,center,center);
-
-    }
-    a{
-      padding: 25px;
-    }
-    a{
-      display: inline-block;
-      &:hover{
-        color: white;
-        background-color: $primary-color;
+    .nav-center {
+      ul {
+        // padding: 40px;
+        @include flex(flex, center, center);
+        gap: 0.5em;
+      }
+      a {
+        padding: 0 10px;
+      }
+      a {
+        display: inline-block;
+        &:hover {
+          color: white;
+          background-color: $primary-color;
+        }
       }
     }
   }
 }
-}
 
-.nav-center{
+.nav-center {
   display: inline-block;
 
-    @include flex(flex,center,center);
-    
-   
-  }
+  @include flex(flex, center, center);
+}
 
-  // media queries
-  @media screen and (max-width: 600px){
-    .nav-center{
-      display: none;
-      a{
-        margin-bottom: 10px;
-      }.fa-bars{
-        display: inline-block;
-      }
+.fa-bars {
+  visibility: hidden;
+}
+
+// media queries
+@media(max-width: 600px) {
+  nav.nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-center {
+    display: none;
+    a {
+      margin-bottom: 10px;
     }
   }
-
+  .fa-bars {
+    // display: block;
+    visibility: visible;
+  }
+}

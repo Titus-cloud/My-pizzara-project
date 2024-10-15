@@ -6,49 +6,48 @@
   padding: 90px 0;
 
   .why-us-container {
-  @include flex(space-around, center);
-    max-width: 900px;
-    margin: 0 auto;
-    // padding: 20px;
+    // @include flex(space-around, center);
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh
+    // margin: 0 auto;
   }
 
   .why-us-image {
-    flex: 1;
-  
-    
+    height: 100vh;
+    // height: ;
+    // flex: 1;
+
     img {
       max-width: 100%;
-      // border-radius: 10px;
+      height: 100%;
     }
   }
 
   .why-us-content {
-    flex: 1;
-    // align-items: center;
+    // flex: 1;
+
     justify-content: center;
     padding-right: 10px;
 
-    .why-us-top{
+    .why-us-top {
       display: flex;
-      align-items:flex-start;
-      margin: 3em 15px 0 2.5em;
+      align-items: flex-start;
       flex-direction: column;
-      
+      padding-left: 2em;
+      margin-bottom: .5em;
 
-      // Text
-      .feature-text {
-        font-size: 1em;
-        // margin-left: 10px;
-      }
+      
     }
 
     // Highlight text
     .highlight {
-      color: $black;
+      color: $primary-color;
       font-weight: bold;
       display: block;
       font-size: 1.2rem;
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
     }
 
     // Main heading
@@ -63,55 +62,65 @@
     }
 
     // Paragraph text
-    p {
-      font-size: 1em;
-      color: $black;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
+    // p {
+    //   font-size: 1em;
+    //   color: $black;
+    //   margin-bottom: 30px;
+    //   line-height: 1.6;
+    //   align-self: center;
+    // }
 
     // Flexbox layout for features
     .features {
       background-color: $ba-nav;
+      @include flex(flex-start, flex-start, column);
+      gap: 2em;
+      padding: 3em 2em;
+      // margin-top: 70px;
 
-      
-      
       // Individual feature block
       .feature {
         display: flex;
+        justify-content: flex-start;
         align-items: center;
-        margin: 3em 15px 0 2.5em;
-        text-align: left;
+        padding:1em;
         background-color: #fff;
+        gap: 1em;
+        border-radius: 6px;
+        // padding-left: 10px;
+        // padding-top: 50px;
 
-       .feature-img{
+        .feature-img {
           width: 70px;
+          height: 70px;
           background-color: $black;
           border-radius: 50%;
-          height: 70px;
-          align-content: center;
-          padding-left: 15px;
-          // justify-content: center;
-          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            // align-self: center;
+            width: 40px;
+            height: 40px;
+          }
         }
-        
-        img {
-          // align-items: center;
-          width: 70%;
+        .feature-content{
+          // background-color: green;
+          width: 80%;
         }
 
         h4 {
-          font-size: 1.3rem;
+          // font-size: 1.3rem;
           color: $black;
-          margin-left: 25px;
+          // margin-left: 25px;
         }
 
-        p {
-          font-size: 1em;
-          color: $light-gray;
-          margin-left: 25px;
-          line-height: 1.5;
-        }
+        // p {
+        //   font-size: 1em;
+        //   color: $light-gray;
+        //   margin-left: 25px;
+        //   line-height: 1.5;
+        // }
       }
     }
   }
@@ -123,10 +132,10 @@
     .why-us-container {
       display: grid;
       grid-template-columns: 1fr;
-      width: 100%; 
+      width: 100%;
 
       .why-us-image {
-        display: none; 
+        display: none;
       }
 
       .why-us-content {
@@ -134,13 +143,13 @@
 
         .why-us-top {
           h2 {
-            font-size: 1.5em; 
+            font-size: 1.5em;
           }
         }
 
         .features {
           display: grid;
-          grid-template-columns: 1fr; 
+          grid-template-columns: 1fr;
           gap: 10px;
 
           .feature {
@@ -148,7 +157,7 @@
 
             .feature-img {
               img {
-                max-width: 80%; 
+                max-width: 80%;
                 height: auto;
               }
             }

@@ -37,7 +37,7 @@
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="shop.html" target="_blank">Shop</a></li>
+                <li><a href="shop.html" target="_self">Shop</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
@@ -65,13 +65,14 @@
               <div>
                 <form action="#">
                   <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
                     <input
                       type="text"
                       placeholder="Find Pizza Type"
                       class="search-input"
                     />
                     <button type="submit" class="search-btn">Search</button>
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
                   </div>
                 </form>
               </div>
@@ -175,7 +176,6 @@
               <div class="varieties-container">
                 <div class="variaties-img">
                   <img
-                    class="var"
                     src="images/chicken-kebab.png"
                     alt="Chicken Kebab Pizza"
                   />
@@ -226,7 +226,7 @@
                     <img src="images/fresh-pizza.png" alt="Fresh Pizza" />
                   </div>
 
-                  <div>
+                  <div class="feature-content">
                     <h4>Fresh Pizza</h4>
                     <p>
                       We make our pizza to suit your needs as we use the best
@@ -239,7 +239,7 @@
                     <img src="images/fast-delivery.png" alt="Fast Delivery" />
                   </div>
 
-                  <div>
+                  <div class="feature-content">
                     <h4>Fast Delivery</h4>
                     <p>
                       Through rapid delivery, we provide a high level of
@@ -252,7 +252,7 @@
                   <div class="feature-img">
                     <img src="images/quality.png" alt="Best Quality" />
                   </div>
-                  <div>
+                  <div class="feature-content">
                     <h4>Best Quality</h4>
                     <p>
                       Our delivery service is available at any time and usually
@@ -280,17 +280,23 @@
             <!-- Support Details Section -->
             <div class="support-details">
               <div class="support-card">
-                <img src="images/mail.png" alt="Mail" />
+                <div class="support_img">
+                  <img src="images/mail.png" alt="Mail" />
+                </div>
                 <h5>Email Address</h5>
                 <p>pizaaradeliveries@info.com</p>
               </div>
               <div class="support-card">
-                <img src="images/live-support.png" alt="Live Support" />
+                <div class="support_img">
+                  <img src="images/live-support.png" alt="Live Support" />
+                </div>
                 <h5>Live Support</h5>
                 <p>Get live support now</p>
               </div>
               <div class="support-card">
-                <img src="images/phone.png" alt="Phone" />
+                <div class="support_img">
+                  <img src="images/phone.png" alt="Phone" />
+                </div>
                 <h5>Phone Number</h5>
                 <p>+2547 11 555 888</p>
               </div>

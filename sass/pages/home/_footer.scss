@@ -16,24 +16,24 @@ footer {
 
   .footer-left {
     .footer-logo {
-      max-width: 150px;
+      max-width: 250px;
       margin-bottom: 20px;
     }
 
     h4 {
-      font-size: 2em;
+      font-size: 1.5rem;
       margin-bottom: 10px;
     }
 
     .social-icons {
       display: flex;
-      gap: 10px;
+      gap: 1em;
 
       img {
         width: 40px;
         height: 40px;
         background-color: $black;
-        padding: 10px;
+        // padding: 10px;
         border-radius: 50%;
         transition: background-color 0.3s;
 
@@ -58,7 +58,7 @@ footer {
         margin-bottom: 10px;
 
         a {
-          color: $primary-color;
+          color: #fff;
           text-decoration: none;
           font-size: 1em;
 
@@ -86,6 +86,7 @@ footer {
         width: 250px;
         font-size: 500;
         height: 60px;
+        outline: none;
       }
 
       .subscribe-btn {

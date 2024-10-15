@@ -2,16 +2,18 @@
 @use"./variables" as *;
 
 
-body{
-  font-family: "Kanit", system-ui;
- 
-}
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+body{
+  font-family: "Kanit", system-ui;
+ 
+}
+
 
 ul{
   list-style-type: none;
