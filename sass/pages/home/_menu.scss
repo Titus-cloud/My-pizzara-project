@@ -32,19 +32,18 @@
     li {
       font-size: 1.2rem;
       font-weight: bold;
-
+      cursor: pointer;
+      
+      
       a {
         transition: color 0.3s ease;     
-
-        &:hover {
+        &:focus{
           color: $primary-color;
-          border-bottom: 5px solid $primary-color;
-          padding: 16px 0;
-
-        }
+      }
 
         
       }
+
     }
   }
 
