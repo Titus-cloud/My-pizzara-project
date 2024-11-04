@@ -58,6 +58,7 @@ nav .nav {
   flex-wrap: nowrap;
   flex-direction: row;
   padding: 1em 0;
+  position: relative;
 }
 nav .nav .nav-right {
   display: flex;
@@ -92,14 +93,21 @@ nav .nav .nav-center a:hover {
   background-color: orange;
 }
 
+.cart {
+  cursor: pointer;
+}
+
 .cart_no {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   background-color: orange;
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  text-align: center;
-  left: 1%;
+  left: 20px;
+  bottom: 15px;
 }
 
 .nav-center {
@@ -114,6 +122,79 @@ nav .nav .nav-center a:hover {
 
 .fa-bars {
   visibility: hidden;
+}
+
+.cart_container {
+  position: absolute;
+  padding: 10px;
+  background-color: #F4F7FB;
+  z-index: 2;
+  right: 10px;
+  display: none;
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.cart_items_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart_items_section .cartImg {
+  display: flex;
+}
+.cart_items_section img {
+  width: 50px;
+  height: 50px;
+  flex: 1;
+}
+.cart_items_section .quants {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.cart_items_section .quants p {
+  flex: 1;
+  background-color: orange;
+  padding-left: 0.8em;
+  cursor: pointer;
+}
+
+.cart_items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.cart_items .cartImg {
+  display: flex;
+  padding-right: 50px;
+}
+.cart_items img {
+  width: 70px;
+  height: 70px;
+}
+.cart_items .quants {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.cart_items .quants p {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.show-cart-container {
+  display: block;
+  width: 30vw;
 }
 
 @media (max-width: 600px) {
