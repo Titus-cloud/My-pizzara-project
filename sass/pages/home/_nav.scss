@@ -10,6 +10,7 @@ nav {
     .nav-right {
       @include flex(space-between, center, row);
       gap: 2em;
+      position: relative;
       img {
         // padding-left: 15px;
         width: 30px;
@@ -34,6 +35,22 @@ nav {
       }
     }
   }
+}
+
+
+
+.cart_no{
+    position: absolute;
+    // top: 2px;
+    background-color: $primary-color;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    // right: 20.5em; 
+    left: 1%;
+
+
 }
 
 .nav-center {

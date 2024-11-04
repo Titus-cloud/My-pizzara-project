@@ -67,6 +67,7 @@ nav .nav .nav-right {
   flex-wrap: nowrap;
   flex-direction: row;
   gap: 2em;
+  position: relative;
 }
 nav .nav .nav-right img {
   width: 30px;
@@ -89,6 +90,16 @@ nav .nav .nav-center a {
 nav .nav .nav-center a:hover {
   color: white;
   background-color: orange;
+}
+
+.cart_no {
+  position: absolute;
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  left: 1%;
 }
 
 .nav-center {
