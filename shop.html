@@ -26,27 +26,61 @@
         <div class="container">
           <div class="nav">
             <div class="nav-left">
-              <a href="index.html"
-                ><img src="images/logo.svg" alt="Main Logo"
-              /></a>
+              <img src="images/logo.svg" alt="Main Logo" />
             </div>
             <div class="nav-center">
               <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/">About Us</a></li>
-                <li><a href="/">Shop</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="shop.html" target="_self">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
             <div class="nav-right">
-              <img src="images/shopping-cart.png" alt="Shopping Cart" />
+              <img
+                class="cart"
+                src="images/shopping-cart.png"
+                alt="Shopping Cart"
+              />
+              <span class="cart_no">0</span>
               <img src="images/avatar.png" alt="User Avatar" />
             </div>
-            <i class="fa-solid fa-bars"></i>
+            <div class="hammburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
           </div>
         </div>
       </nav>
-    </header>
+
+      <div class="cart_container">
+        <div class="cart_hearder">
+          <ul>
+            <li>Image</li>
+            <li>Name</li>
+            <li>Quantity</li>
+            <li>Price</li>
+          </ul>
+        </div>
+        <div class="cart_items_section">
+          <!-- <div class="cartImg">
+            <img
+              src="images/tandoori-chicken.png"
+              alt="Tandoori Chicken Pizza"
+            />
+          </div>
+          <p class="v-c-bold">Tandoori Pepperoni<br /></p>
+          <p class="v-c-bold">Ksh. 1500</p>
+          <div class="quants">
+            <p>-</p>
+            <p>1</p>
+            <p>+</p>
+          </div> -->
+        </div>
+        <h3 class="totalPrice"></h3>
+      </div>
+
     <main>
 
           <!-- Menu Section -->
@@ -54,11 +88,11 @@
         <div class="container">
           <div class="menu-container">
             <ul>
-              <li><a href="#" class="active">Chicken Pizza</a></li>
-              <li><a href="#">Pepperoni</a></li>
-              <li><a href="#">Margherita</a></li>
-              <li><a href="#">Hawaiian</a></li>
-              <li><a href="#">Meat Lover’s Pizza</a></li>
+              <li><a href="#" class="select" class="active">Chicken Pizza</a></li>
+              <li><a href="#" class="select">Pepperoni</a></li>
+              <li><a href="#" class="select">Margherita</a></li>
+              <li><a href="#" class="select">Hawaiian</a></li>
+              <li><a href="#" class="select">Meat Lover’s Pizza</a></li>
             </ul>
             <hr />
 <div class="all-varieties">
@@ -418,5 +452,7 @@
         </div>
       </div>
     </footer>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/cart.js"></script>
   </body>
 </html>

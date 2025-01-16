@@ -1,6 +1,15 @@
 const selectTags = document.querySelectorAll(".select"); //This will give us a nodeList[] thus we can use forrrEach to it
 const pizzaItems = document.querySelectorAll(".variaties");
 
+const navEl = document.querySelector('.nav-center')
+const hambergeeEl = document.querySelector('.hammburger')
+
+hambergeeEl.addEventListener('click', ()=>{
+  navEl.classList.toggle('nav-center')
+  // console.log("object");
+  hambergeeEl.classList.toggle('ham-open')
+})
+
 // we add the class active that I have made on the css, gave it styles and add it using js
 selectTags.forEach((tab) => {
   if (tab.textContent.toLowerCase() === "chicken pizza") {
@@ -9,7 +18,7 @@ selectTags.forEach((tab) => {
 });
 
 pizzaItems.forEach((category) => {
-  console.log(category)
+  // console.log(category)
   // if it meets this need let it be visible
   if (category.classList.contains("chicken")) {
     category.style.display = "flex";
